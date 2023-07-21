@@ -1,0 +1,33 @@
+api_version = "2023-07"
+
+[capabilities]
+api_access = true
+network_access = true
+block_progress = true
+
+[[extensions]]
+type = "ui_extension"
+name = "client-validation"
+handle = "client-validation"
+# [START client-validation.extension-point-config]
+[[extensions.targeting]]
+target = "purchase.checkout.contact.render-after"
+module = "./src/index.jsx"
+# [END client-validation.extension-point-config]
+# [START client-validation.capabilities]
+[extensions.capabilities]
+block_progress = true
+# [END client-validation.capabilities]
+
+
+# [[extensions.metafields]]
+# namespace = "my-namespace"
+# key = "my-key"
+
+# Read more on extension settings at https://shopify.dev/api/checkout-extensions/checkout/configuration
+# [settings]
+#   [[settings.fields]]
+#   key = "banner_title"
+#   type = "single_line_text_field"
+#   name = "Banner title"
+#   description = "Enter a title for the banner"
