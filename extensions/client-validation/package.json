@@ -1,11 +1,12 @@
 {
   "name": "client-validation",
+  "private": true,
   "version": "1.0.0",
-  "main": "dist/main.js",
   "license": "UNLICENSED",
   "dependencies": {
     "react": "^17.0.0",
-    "@shopify/ui-extensions-react": "2022.10.3"
+    "@shopify/ui-extensions": "unstable",
+    "@shopify/ui-extensions-react": "unstable"
   },
   "devDependencies": {
     "@types/react": "^17.0.0"

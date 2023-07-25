@@ -1,24 +1,6 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-name = "client-validation-react"
-client_id = "668ce3048386a835816d6612eeb4a10f"
-application_url = "https://gentleman-standards-untitled-type.trycloudflare.com"
-embedded = true
-
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
-use_legacy_install_flow = true
 
-[auth]
-redirect_urls = [
-  "https://gentleman-standards-untitled-type.trycloudflare.com/auth/callback",
-  "https://gentleman-standards-untitled-type.trycloudflare.com/auth/shopify/callback",
-  "https://gentleman-standards-untitled-type.trycloudflare.com/api/auth/callback"
-]
-
-[webhooks]
-api_version = "2023-04"
-
-[pos]
-embedded = false
