@@ -16,7 +16,7 @@ handle = "client-validation"
 # [START client-validation.extension-point-config]
 [[extensions.targeting]]
 target = "purchase.checkout.contact.render-after"
-module = "./src/index.jsx"
+module = "./src/Checkout.jsx"
 # [END client-validation.extension-point-config]
 # [START client-validation.capabilities]
 [extensions.capabilities]
