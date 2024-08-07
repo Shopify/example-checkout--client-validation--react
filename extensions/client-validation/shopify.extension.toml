@@ -1,9 +1,4 @@
-# Learn more about configuring your checkout UI extension:
-# https://shopify.dev/api/checkout-extensions/checkout/configuration
-
-# The version of APIs your extension will receive. Learn more:
-# https://shopify.dev/docs/api/usage/versioning
-api_version = "2023-10"
+api_version = "2024-07"
 
 [[extensions]]
 type = "ui_extension"
@@ -22,30 +17,3 @@ module = "./src/Checkout.jsx"
 [extensions.capabilities]
 block_progress = true
 # [END client-validation.capabilities]
-
-# Gives your extension access to make external network calls, using the
-# JavaScript `fetch()` API. Learn more:
-# https://shopify.dev/docs/api/checkout-ui-extensions/unstable/configuration#network-access
-network_access = true
-
-# Loads metafields on checkout resources, including the cart,
-# products, customers, and more. Learn more:
-# https://shopify.dev/docs/api/checkout-ui-extensions/unstable/configuration#metafields
-
-# [[extensions.metafields]]
-# namespace = "my_namespace"
-# key = "my_key"
-# [[extensions.metafields]]
-# namespace = "my_namespace"
-# key = "my_other_key"
-
-# Defines settings that will be collected from merchants installing
-# your extension. Learn more:
-# https://shopify.dev/docs/api/checkout-ui-extensions/unstable/configuration#settings-definition
-
-# [extensions.settings]
-# [[extensions.settings.fields]]
-# key = "banner_title"
-# type = "single_line_text_field"
-# name = "Banner title"
-# description = "Enter a title for the banner"
