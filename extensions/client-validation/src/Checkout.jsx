@@ -19,6 +19,7 @@ function App() {
   const [validationError, setValidationError] = useState("");
   // [START client-validation.subscribe-block-progress]
   // Merchants can toggle the `block_progress` capability behavior within the checkout editor
+  // Outer scope variable
   const canBlockProgress = useExtensionCapability("block_progress");
   // [END client-validation.subscribe-block-progress]
    // [START client-validation.field-required]
@@ -26,9 +27,11 @@ function App() {
   // [END client-validation.field-required]
   // [START client-validation.buyer-journey-intercept]
   // Use the `buyerJourney` intercept to conditionally block checkout progress
+  // Parameter shadows the outer scope variable
   useBuyerJourneyIntercept(({ canBlockProgress }) => {
     // [START client-validation.block-progress]
     // Validate that the age of the buyer is known, and that they're old enough to complete the purchase
+    // This canBlockProgress refers to the parameter, not the outer variable
     if (canBlockProgress && !isAgeSet()) {
       return {
         behavior: "block",
