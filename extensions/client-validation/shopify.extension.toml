@@ -9,6 +9,7 @@ api_version = "2024-07"
 type = "ui_extension"
 name = "client-validation"
 handle = "client-validation"
+uid = "86819c9b-e4f2-1eab-3a11-a68e00138fd457cb6248"
 
 # Controls where in Shopify your extension will be injected,
 # and the file that contains your extension’s source code. Learn more:
