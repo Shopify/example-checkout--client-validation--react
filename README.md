@@ -1,3 +1,5 @@
+> **This repository is no longer maintained.** It has been archived and receives no updates or security fixes. For the current tutorial, see [Create checkout validation](https://shopify.dev/docs/apps/build/checkout/cart-checkout-validation/create-checkout-validation).
+
 # Shopify app example: client-side validation checkout extension
 
 This repo contains an example app that uses [checkout UI extensions](https://shopify.dev/docs/api/checkout-ui-extensions) to add a field with client side validation.
